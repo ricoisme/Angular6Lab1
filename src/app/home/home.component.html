@@ -1,0 +1,21 @@
+<h2>My Item List</h2>
+<div class="container color-dark">
+    <div class="col">
+        <p>Add a item</p>
+    </div>
+    <div class="col">
+      <p>your item list [{{itemCount}}]</p>
+    </div>
+</div>
+<div class="container color-light" [@items]="items.length">
+    <div class="col">
+        <p class="sm">screw it</p>
+        <form>
+          <input type="text" class="txt" name="item" placeholder="what do you want.." [(ngModel)]="wantText">
+          <input type="submit" class="btn" [value]="btnText" (click)="addItem()">
+        </form>
+    </div>
+    <div class="col">
+        <p class="life-container" *ngFor="let item of items; let i = index" (click)="removeItem(i)">{{ item }}</p>
+    </div>
+</div>

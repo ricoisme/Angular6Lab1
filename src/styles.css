@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,700');
+
+body {
+  background: rgb(0, 6, 12);
+  padding: 3em;
+  font-family: 'Ubuntu','Arial';
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 0 2em 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+ul li a {
+  font-size: 1.5em;
+}
+
+a {
+  color: rgb(40, 37, 236);
+  text-decoration: none;
+  cursor: pointer;
+}
